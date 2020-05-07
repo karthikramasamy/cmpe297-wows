@@ -1,0 +1,190 @@
+Reading data/CSCO-DEFAULT.csv
+Read done, got 1824 rows, 0 filtered, 0 open prices adjusted
+Reading data/CSCO-VAL.csv
+Read done, got 247 rows, 0 filtered, 0 open prices adjusted
+DQNConv1D(
+  (conv): Sequential(
+    (0): Conv1d(5, 128, kernel_size=(5,), stride=(1,))
+    (1): ReLU()
+    (2): Conv1d(128, 128, kernel_size=(5,), stride=(1,))
+    (3): ReLU()
+  )
+  (fc_val): Sequential(
+    (0): Linear(in_features=5376, out_features=512, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=512, out_features=1, bias=True)
+  )
+  (fc_adv): Sequential(
+    (0): Linear(in_features=5376, out_features=512, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=512, out_features=3, bias=True)
+  )
+)
+727: done 100 games, mean reward 0.137, mean steps 6.39, speed 512.41 f/s, eps 1.00
+1436: done 200 games, mean reward 0.271, mean steps 6.30, speed 573.07 f/s, eps 1.00
+2113: done 300 games, mean reward 0.070, mean steps 6.16, speed 586.88 f/s, eps 1.00
+2867: done 400 games, mean reward 0.038, mean steps 6.29, speed 580.92 f/s, eps 1.00
+3565: done 500 games, mean reward 0.050, mean steps 6.24, speed 554.85 f/s, eps 1.00
+4265: done 600 games, mean reward 0.010, mean steps 6.22, speed 571.86 f/s, eps 1.00
+4934: done 700 games, mean reward 0.016, mean steps 6.16, speed 586.25 f/s, eps 1.00
+5662: done 800 games, mean reward -0.030, mean steps 6.19, speed 567.65 f/s, eps 0.99
+6292: done 900 games, mean reward -0.018, mean steps 6.10, speed 577.26 f/s, eps 0.99
+6972: done 1000 games, mean reward -0.048, mean steps 6.08, speed 579.06 f/s, eps 0.99
+7637: done 1100 games, mean reward -0.003, mean steps 6.05, speed 572.60 f/s, eps 0.99
+8311: done 1200 games, mean reward -0.015, mean steps 6.03, speed 517.79 f/s, eps 0.99
+8943: done 1300 games, mean reward -0.047, mean steps 5.99, speed 492.04 f/s, eps 0.99
+9593: done 1400 games, mean reward -0.060, mean steps 5.96, speed 447.63 f/s, eps 0.99
+Initial buffer populated, start training
+10285: done 1500 games, mean reward -0.062, mean steps 5.96, speed 24.25 f/s, eps 0.99
+10923: done 1600 games, mean reward -0.046, mean steps 5.94, speed 7.15 f/s, eps 0.99
+11628: done 1700 games, mean reward -0.038, mean steps 5.95, speed 4.79 f/s, eps 0.99
+12000: Best mean value updated 0.050 -> 0.065
+12282: done 1800 games, mean reward -0.036, mean steps 5.93, speed 5.04 f/s, eps 0.99
+12993: done 1900 games, mean reward -0.029, mean steps 5.95, speed 5.02 f/s, eps 0.99
+13000: Best mean value updated 0.065 -> 0.109
+13703: done 2000 games, mean reward -0.006, mean steps 5.96, speed 5.06 f/s, eps 0.99
+14000: Best mean value updated 0.109 -> 0.140
+14384: done 2100 games, mean reward 0.005, mean steps 5.96, speed 4.82 f/s, eps 0.99
+15000: Best mean value updated 0.140 -> 0.187
+15066: done 2200 games, mean reward -0.024, mean steps 5.96, speed 4.80 f/s, eps 0.98
+15752: done 2300 games, mean reward -0.044, mean steps 5.96, speed 4.79 f/s, eps 0.98
+16000: Best mean value updated 0.187 -> 0.200
+16487: done 2400 games, mean reward -0.043, mean steps 5.98, speed 4.86 f/s, eps 0.98
+17000: Best mean value updated 0.200 -> 0.208
+17209: done 2500 games, mean reward -0.061, mean steps 5.99, speed 4.80 f/s, eps 0.98
+17918: done 2600 games, mean reward -0.059, mean steps 6.00, speed 4.68 f/s, eps 0.98
+18000: Best mean value updated 0.208 -> 0.270
+18574: done 2700 games, mean reward -0.080, mean steps 5.99, speed 4.93 f/s, eps 0.98
+19000: Best mean value updated 0.270 -> 0.277
+19290: done 2800 games, mean reward -0.069, mean steps 6.00, speed 5.19 f/s, eps 0.98
+19970: done 2900 games, mean reward -0.059, mean steps 5.99, speed 5.13 f/s, eps 0.98
+20665: done 3000 games, mean reward -0.052, mean steps 6.00, speed 5.16 f/s, eps 0.98
+21367: done 3100 games, mean reward -0.054, mean steps 6.00, speed 5.11 f/s, eps 0.98
+22024: done 3200 games, mean reward -0.063, mean steps 5.99, speed 5.03 f/s, eps 0.98
+22725: done 3300 games, mean reward -0.056, mean steps 6.00, speed 5.04 f/s, eps 0.98
+23364: done 3400 games, mean reward -0.057, mean steps 5.98, speed 5.03 f/s, eps 0.98
+24000: Best mean value updated 0.277 -> 0.434
+24061: done 3500 games, mean reward -0.049, mean steps 5.99, speed 5.01 f/s, eps 0.98
+24700: done 3600 games, mean reward -0.060, mean steps 5.97, speed 5.02 f/s, eps 0.98
+25000: Best mean value updated 0.434 -> 0.590
+25407: done 3700 games, mean reward -0.074, mean steps 5.98, speed 5.00 f/s, eps 0.97
+26096: done 3800 games, mean reward -0.073, mean steps 5.98, speed 5.04 f/s, eps 0.97
+26785: done 3900 games, mean reward -0.064, mean steps 5.98, speed 5.04 f/s, eps 0.97
+27415: done 4000 games, mean reward -0.070, mean steps 5.96, speed 5.02 f/s, eps 0.97
+28075: done 4100 games, mean reward -0.067, mean steps 5.96, speed 5.03 f/s, eps 0.97
+28773: done 4200 games, mean reward -0.067, mean steps 5.96, speed 4.94 f/s, eps 0.97
+29508: done 4300 games, mean reward -0.065, mean steps 5.97, speed 4.93 f/s, eps 0.97
+30000: Best mean value updated 0.590 -> 0.738
+30155: done 4400 games, mean reward -0.077, mean steps 5.96, speed 4.93 f/s, eps 0.97
+30862: done 4500 games, mean reward -0.074, mean steps 5.97, speed 4.94 f/s, eps 0.97
+31000: Best mean value updated 0.738 -> 0.973
+31604: done 4600 games, mean reward -0.074, mean steps 5.98, speed 4.93 f/s, eps 0.97
+32000: Best mean value updated 0.973 -> 0.990
+32278: done 4700 games, mean reward -0.076, mean steps 5.98, speed 4.92 f/s, eps 0.97
+32941: done 4800 games, mean reward -0.072, mean steps 5.97, speed 4.95 f/s, eps 0.97
+33000: Best mean value updated 0.990 -> 1.094
+33635: done 4900 games, mean reward -0.072, mean steps 5.97, speed 4.92 f/s, eps 0.97
+34275: done 5000 games, mean reward -0.074, mean steps 5.96, speed 4.86 f/s, eps 0.97
+35029: done 5100 games, mean reward -0.081, mean steps 5.98, speed 4.96 f/s, eps 0.96
+35725: done 5200 games, mean reward -0.075, mean steps 5.98, speed 4.93 f/s, eps 0.96
+36000: Best mean value updated 1.094 -> 1.194
+36417: done 5300 games, mean reward -0.073, mean steps 5.98, speed 4.90 f/s, eps 0.96
+37000: Best mean value updated 1.194 -> 1.294
+37085: done 5400 games, mean reward -0.075, mean steps 5.98, speed 4.95 f/s, eps 0.96
+37810: done 5500 games, mean reward -0.062, mean steps 5.98, speed 4.96 f/s, eps 0.96
+38482: done 5600 games, mean reward -0.069, mean steps 5.98, speed 4.96 f/s, eps 0.96
+39000: Best mean value updated 1.294 -> 1.635
+39192: done 5700 games, mean reward -0.073, mean steps 5.98, speed 4.87 f/s, eps 0.96
+39936: done 5800 games, mean reward -0.070, mean steps 5.99, speed 4.77 f/s, eps 0.96
+40603: done 5900 games, mean reward -0.060, mean steps 5.99, speed 4.87 f/s, eps 0.96
+41341: done 6000 games, mean reward -0.059, mean steps 6.00, speed 4.82 f/s, eps 0.96
+42052: done 6100 games, mean reward -0.056, mean steps 6.00, speed 4.77 f/s, eps 0.96
+42759: done 6200 games, mean reward -0.058, mean steps 6.00, speed 4.79 f/s, eps 0.96
+43487: done 6300 games, mean reward -0.063, mean steps 6.01, speed 4.87 f/s, eps 0.96
+44152: done 6400 games, mean reward -0.056, mean steps 6.01, speed 4.77 f/s, eps 0.96
+44898: done 6500 games, mean reward -0.052, mean steps 6.01, speed 4.97 f/s, eps 0.96
+45554: done 6600 games, mean reward -0.048, mean steps 6.01, speed 4.92 f/s, eps 0.95
+46232: done 6700 games, mean reward -0.055, mean steps 6.01, speed 4.89 f/s, eps 0.95
+46944: done 6800 games, mean reward -0.060, mean steps 6.01, speed 4.78 f/s, eps 0.95
+47637: done 6900 games, mean reward -0.057, mean steps 6.01, speed 4.73 f/s, eps 0.95
+48312: done 7000 games, mean reward -0.062, mean steps 6.01, speed 4.77 f/s, eps 0.95
+48975: done 7100 games, mean reward -0.058, mean steps 6.01, speed 4.82 f/s, eps 0.95
+49699: done 7200 games, mean reward -0.060, mean steps 6.01, speed 4.81 f/s, eps 0.95
+50416: done 7300 games, mean reward -0.051, mean steps 6.01, speed 4.94 f/s, eps 0.95
+51077: done 7400 games, mean reward -0.048, mean steps 6.01, speed 4.93 f/s, eps 0.95
+51788: done 7500 games, mean reward -0.045, mean steps 6.01, speed 4.87 f/s, eps 0.95
+52509: done 7600 games, mean reward -0.038, mean steps 6.02, speed 4.85 f/s, eps 0.95
+53224: done 7700 games, mean reward -0.032, mean steps 6.02, speed 4.92 f/s, eps 0.95
+53949: done 7800 games, mean reward -0.027, mean steps 6.02, speed 4.95 f/s, eps 0.95
+54000: Best mean value updated 1.635 -> 1.821
+54681: done 7900 games, mean reward -0.027, mean steps 6.03, speed 4.94 f/s, eps 0.95
+55000: Best mean value updated 1.821 -> 1.877
+55411: done 8000 games, mean reward -0.023, mean steps 6.03, speed 4.93 f/s, eps 0.94
+56000: Best mean value updated 1.877 -> 1.896
+56129: done 8100 games, mean reward -0.023, mean steps 6.04, speed 4.89 f/s, eps 0.94
+56863: done 8200 games, mean reward -0.029, mean steps 6.04, speed 4.90 f/s, eps 0.94
+57000: Best mean value updated 1.896 -> 1.928
+57627: done 8300 games, mean reward -0.028, mean steps 6.05, speed 4.90 f/s, eps 0.94
+58367: done 8400 games, mean reward -0.026, mean steps 6.05, speed 4.93 f/s, eps 0.94
+59011: done 8500 games, mean reward -0.028, mean steps 6.05, speed 4.91 f/s, eps 0.94
+59730: done 8600 games, mean reward -0.019, mean steps 6.05, speed 4.89 f/s, eps 0.94
+60479: done 8700 games, mean reward -0.019, mean steps 6.06, speed 4.88 f/s, eps 0.94
+61266: done 8800 games, mean reward -0.023, mean steps 6.07, speed 4.84 f/s, eps 0.94
+61988: done 8900 games, mean reward -0.028, mean steps 6.07, speed 4.92 f/s, eps 0.94
+62644: done 9000 games, mean reward -0.028, mean steps 6.07, speed 4.89 f/s, eps 0.94
+63383: done 9100 games, mean reward -0.025, mean steps 6.07, speed 4.88 f/s, eps 0.94
+64081: done 9200 games, mean reward -0.019, mean steps 6.07, speed 4.82 f/s, eps 0.94
+64774: done 9300 games, mean reward -0.015, mean steps 6.07, speed 4.85 f/s, eps 0.94
+65472: done 9400 games, mean reward -0.016, mean steps 6.07, speed 4.82 f/s, eps 0.93
+66202: done 9500 games, mean reward -0.018, mean steps 6.07, speed 4.81 f/s, eps 0.93
+66886: done 9600 games, mean reward -0.015, mean steps 6.07, speed 4.81 f/s, eps 0.93
+67624: done 9700 games, mean reward -0.013, mean steps 6.08, speed 4.77 f/s, eps 0.93
+68348: done 9800 games, mean reward -0.008, mean steps 6.08, speed 4.67 f/s, eps 0.93
+69067: done 9900 games, mean reward -0.009, mean steps 6.08, speed 4.67 f/s, eps 0.93
+69756: done 10000 games, mean reward -0.009, mean steps 6.08, speed 4.56 f/s, eps 0.93
+70393: done 10100 games, mean reward -0.013, mean steps 6.07, speed 4.74 f/s, eps 0.93
+71000: Best mean value updated 1.928 -> 1.977
+71158: done 10200 games, mean reward -0.010, mean steps 6.08, speed 4.61 f/s, eps 0.93
+71904: done 10300 games, mean reward -0.003, mean steps 6.09, speed 4.61 f/s, eps 0.93
+72601: done 10400 games, mean reward -0.004, mean steps 6.08, speed 4.41 f/s, eps 0.93
+73350: done 10500 games, mean reward -0.003, mean steps 6.09, speed 4.65 f/s, eps 0.93
+74065: done 10600 games, mean reward 0.006, mean steps 6.09, speed 4.35 f/s, eps 0.93
+74766: done 10700 games, mean reward 0.003, mean steps 6.09, speed 4.30 f/s, eps 0.93
+75431: done 10800 games, mean reward 0.004, mean steps 6.09, speed 4.31 f/s, eps 0.92
+76171: done 10900 games, mean reward 0.004, mean steps 6.10, speed 4.36 f/s, eps 0.92
+76914: done 11000 games, mean reward 0.004, mean steps 6.10, speed 4.39 f/s, eps 0.92
+77636: done 11100 games, mean reward 0.000, mean steps 6.11, speed 4.37 f/s, eps 0.92
+78340: done 11200 games, mean reward 0.006, mean steps 6.11, speed 4.40 f/s, eps 0.92
+79077: done 11300 games, mean reward 0.012, mean steps 6.12, speed 4.33 f/s, eps 0.92
+79751: done 11400 games, mean reward 0.017, mean steps 6.12, speed 4.31 f/s, eps 0.92
+80401: done 11500 games, mean reward 0.015, mean steps 6.12, speed 4.31 f/s, eps 0.92
+81095: done 11600 games, mean reward 0.010, mean steps 6.12, speed 4.37 f/s, eps 0.92
+81771: done 11700 games, mean reward 0.012, mean steps 6.12, speed 4.39 f/s, eps 0.92
+82403: done 11800 games, mean reward 0.013, mean steps 6.12, speed 4.26 f/s, eps 0.92
+83086: done 11900 games, mean reward 0.015, mean steps 6.12, speed 4.41 f/s, eps 0.92
+83818: done 12000 games, mean reward 0.012, mean steps 6.12, speed 4.42 f/s, eps 0.92
+84519: done 12100 games, mean reward 0.011, mean steps 6.12, speed 4.41 f/s, eps 0.92
+85276: done 12200 games, mean reward 0.016, mean steps 6.13, speed 4.40 f/s, eps 0.91
+85956: done 12300 games, mean reward 0.020, mean steps 6.13, speed 4.39 f/s, eps 0.91
+86655: done 12400 games, mean reward 0.022, mean steps 6.12, speed 4.37 f/s, eps 0.91
+87000: Best mean value updated 1.977 -> 2.044
+87367: done 12500 games, mean reward 0.028, mean steps 6.12, speed 4.38 f/s, eps 0.91
+88000: Best mean value updated 2.044 -> 2.061
+88065: done 12600 games, mean reward 0.025, mean steps 6.12, speed 4.38 f/s, eps 0.91
+88779: done 12700 games, mean reward 0.038, mean steps 6.13, speed 4.38 f/s, eps 0.91
+89489: done 12800 games, mean reward 0.038, mean steps 6.13, speed 4.37 f/s, eps 0.91
+90236: done 12900 games, mean reward 0.041, mean steps 6.13, speed 4.37 f/s, eps 0.91
+90957: done 13000 games, mean reward 0.036, mean steps 6.14, speed 4.39 f/s, eps 0.91
+91000: Best mean value updated 2.061 -> 2.105
+91640: done 13100 games, mean reward 0.038, mean steps 6.13, speed 4.36 f/s, eps 0.91
+92332: done 13200 games, mean reward 0.043, mean steps 6.14, speed 4.36 f/s, eps 0.91
+93076: done 13300 games, mean reward 0.041, mean steps 6.14, speed 4.34 f/s, eps 0.91
+93775: done 13400 games, mean reward 0.049, mean steps 6.15, speed 4.35 f/s, eps 0.91
+94481: done 13500 games, mean reward 0.048, mean steps 6.15, speed 4.34 f/s, eps 0.91
+95157: done 13600 games, mean reward 0.055, mean steps 6.15, speed 4.34 f/s, eps 0.90
+95922: done 13700 games, mean reward 0.060, mean steps 6.16, speed 4.35 f/s, eps 0.90
+96656: done 13800 games, mean reward 0.061, mean steps 6.16, speed 4.34 f/s, eps 0.90
+97352: done 13900 games, mean reward 0.057, mean steps 6.16, speed 4.34 f/s, eps 0.90
+98103: done 14000 games, mean reward 0.066, mean steps 6.17, speed 4.33 f/s, eps 0.90
+98875: done 14100 games, mean reward 0.065, mean steps 6.19, speed 4.30 f/s, eps 0.90
+99556: done 14200 games, mean reward 0.062, mean steps 6.18, speed 4.29 f/s, eps 0.90

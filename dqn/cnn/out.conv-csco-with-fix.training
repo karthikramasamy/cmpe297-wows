@@ -1,0 +1,644 @@
+Reading data/CSCO-DEFAULT.csv
+Read done, got 1824 rows, 0 filtered, 0 open prices adjusted
+Reading data/CSCO-VAL.csv
+Read done, got 247 rows, 0 filtered, 0 open prices adjusted
+DQNConv1D(
+  (conv): Sequential(
+    (0): Conv1d(5, 128, kernel_size=(5,), stride=(1,))
+    (1): ReLU()
+    (2): Conv1d(128, 128, kernel_size=(5,), stride=(1,))
+    (3): ReLU()
+  )
+  (fc_val): Sequential(
+    (0): Linear(in_features=5376, out_features=512, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=512, out_features=1, bias=True)
+  )
+  (fc_adv): Sequential(
+    (0): Linear(in_features=5376, out_features=512, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=512, out_features=3, bias=True)
+  )
+)
+680: done 100 games, mean reward 0.377, mean steps 5.90, speed 596.23 f/s, eps 1.00
+1388: done 200 games, mean reward 0.306, mean steps 6.03, speed 608.64 f/s, eps 1.00
+2093: done 300 games, mean reward 0.174, mean steps 6.06, speed 616.35 f/s, eps 1.00
+2763: done 400 games, mean reward 0.048, mean steps 6.01, speed 604.03 f/s, eps 1.00
+3436: done 500 games, mean reward -0.031, mean steps 5.98, speed 620.31 f/s, eps 1.00
+4110: done 600 games, mean reward -0.007, mean steps 5.95, speed 590.32 f/s, eps 1.00
+4810: done 700 games, mean reward 0.006, mean steps 5.98, speed 511.05 f/s, eps 1.00
+5486: done 800 games, mean reward -0.010, mean steps 5.96, speed 569.85 f/s, eps 0.99
+6099: done 900 games, mean reward -0.005, mean steps 5.89, speed 608.56 f/s, eps 0.99
+6770: done 1000 games, mean reward -0.003, mean steps 5.88, speed 617.50 f/s, eps 0.99
+7489: done 1100 games, mean reward -0.022, mean steps 5.91, speed 619.77 f/s, eps 0.99
+8178: done 1200 games, mean reward -0.017, mean steps 5.92, speed 602.65 f/s, eps 0.99
+8836: done 1300 games, mean reward -0.046, mean steps 5.91, speed 600.64 f/s, eps 0.99
+9555: done 1400 games, mean reward -0.047, mean steps 5.93, speed 612.54 f/s, eps 0.99
+Initial buffer populated, start training
+10247: done 1500 games, mean reward -0.049, mean steps 5.94, speed 36.08 f/s, eps 0.99
+10926: done 1600 games, mean reward -0.055, mean steps 5.93, speed 8.21 f/s, eps 0.99
+11000: Best mean value updated -0.013 -> 0.044
+11592: done 1700 games, mean reward -0.062, mean steps 5.92, speed 5.20 f/s, eps 0.99
+12000: Best mean value updated 0.044 -> 0.082
+12292: done 1800 games, mean reward -0.073, mean steps 5.93, speed 5.05 f/s, eps 0.99
+12975: done 1900 games, mean reward -0.050, mean steps 5.94, speed 5.04 f/s, eps 0.99
+13000: Best mean value updated 0.082 -> 0.123
+13688: done 2000 games, mean reward -0.066, mean steps 5.95, speed 4.96 f/s, eps 0.99
+14000: Best mean value updated 0.123 -> 0.171
+14452: done 2100 games, mean reward -0.070, mean steps 5.99, speed 4.90 f/s, eps 0.99
+15000: Best mean value updated 0.171 -> 0.224
+15119: done 2200 games, mean reward -0.083, mean steps 5.98, speed 4.89 f/s, eps 0.98
+15855: done 2300 games, mean reward -0.074, mean steps 6.00, speed 4.89 f/s, eps 0.98
+16598: done 2400 games, mean reward -0.063, mean steps 6.02, speed 4.88 f/s, eps 0.98
+17287: done 2500 games, mean reward -0.049, mean steps 6.02, speed 4.87 f/s, eps 0.98
+17971: done 2600 games, mean reward -0.038, mean steps 6.02, speed 4.87 f/s, eps 0.98
+18000: Best mean value updated 0.224 -> 0.250
+18665: done 2700 games, mean reward -0.025, mean steps 6.02, speed 4.86 f/s, eps 0.98
+19442: done 2800 games, mean reward -0.024, mean steps 6.05, speed 4.84 f/s, eps 0.98
+20094: done 2900 games, mean reward -0.039, mean steps 6.04, speed 4.84 f/s, eps 0.98
+20772: done 3000 games, mean reward -0.048, mean steps 6.03, speed 4.86 f/s, eps 0.98
+21457: done 3100 games, mean reward -0.054, mean steps 6.03, speed 4.86 f/s, eps 0.98
+22184: done 3200 games, mean reward -0.057, mean steps 6.04, speed 4.87 f/s, eps 0.98
+22891: done 3300 games, mean reward -0.057, mean steps 6.05, speed 4.85 f/s, eps 0.98
+23000: Best mean value updated 0.250 -> 0.346
+23537: done 3400 games, mean reward -0.070, mean steps 6.03, speed 4.82 f/s, eps 0.98
+24000: Best mean value updated 0.346 -> 0.371
+24248: done 3500 games, mean reward -0.074, mean steps 6.04, speed 4.85 f/s, eps 0.98
+24945: done 3600 games, mean reward -0.085, mean steps 6.04, speed 4.85 f/s, eps 0.98
+25648: done 3700 games, mean reward -0.096, mean steps 6.04, speed 4.81 f/s, eps 0.97
+26330: done 3800 games, mean reward -0.099, mean steps 6.04, speed 4.83 f/s, eps 0.97
+26993: done 3900 games, mean reward -0.094, mean steps 6.03, speed 4.84 f/s, eps 0.97
+27715: done 4000 games, mean reward -0.097, mean steps 6.04, speed 4.81 f/s, eps 0.97
+28421: done 4100 games, mean reward -0.091, mean steps 6.04, speed 4.80 f/s, eps 0.97
+29000: Best mean value updated 0.371 -> 0.499
+29124: done 4200 games, mean reward -0.071, mean steps 6.04, speed 4.77 f/s, eps 0.97
+29787: done 4300 games, mean reward -0.072, mean steps 6.04, speed 4.78 f/s, eps 0.97
+30000: Best mean value updated 0.499 -> 0.644
+30525: done 4400 games, mean reward -0.068, mean steps 6.05, speed 4.78 f/s, eps 0.97
+31000: Best mean value updated 0.644 -> 0.669
+31274: done 4500 games, mean reward -0.063, mean steps 6.06, speed 4.75 f/s, eps 0.97
+32000: Best mean value updated 0.669 -> 0.690
+32044: done 4600 games, mean reward -0.055, mean steps 6.08, speed 4.73 f/s, eps 0.97
+32685: done 4700 games, mean reward -0.056, mean steps 6.06, speed 4.74 f/s, eps 0.97
+33000: Best mean value updated 0.690 -> 0.821
+33415: done 4800 games, mean reward -0.050, mean steps 6.07, speed 4.71 f/s, eps 0.97
+34066: done 4900 games, mean reward -0.050, mean steps 6.06, speed 4.70 f/s, eps 0.97
+34719: done 5000 games, mean reward -0.067, mean steps 6.05, speed 4.71 f/s, eps 0.97
+35000: Best mean value updated 0.821 -> 0.898
+35453: done 5100 games, mean reward -0.064, mean steps 6.06, speed 4.71 f/s, eps 0.96
+36137: done 5200 games, mean reward -0.056, mean steps 6.06, speed 4.71 f/s, eps 0.96
+36853: done 5300 games, mean reward -0.058, mean steps 6.06, speed 4.71 f/s, eps 0.96
+37508: done 5400 games, mean reward -0.059, mean steps 6.05, speed 4.69 f/s, eps 0.96
+38211: done 5500 games, mean reward -0.056, mean steps 6.06, speed 4.62 f/s, eps 0.96
+38945: done 5600 games, mean reward -0.049, mean steps 6.06, speed 4.59 f/s, eps 0.96
+39000: Best mean value updated 0.898 -> 1.057
+39709: done 5700 games, mean reward -0.050, mean steps 6.08, speed 4.46 f/s, eps 0.96
+40000: Best mean value updated 1.057 -> 1.247
+40376: done 5800 games, mean reward -0.059, mean steps 6.07, speed 4.56 f/s, eps 0.96
+41000: Best mean value updated 1.247 -> 1.312
+41106: done 5900 games, mean reward -0.053, mean steps 6.08, speed 4.57 f/s, eps 0.96
+41880: done 6000 games, mean reward -0.054, mean steps 6.09, speed 4.68 f/s, eps 0.96
+42540: done 6100 games, mean reward -0.057, mean steps 6.08, speed 4.66 f/s, eps 0.96
+43000: Best mean value updated 1.312 -> 1.334
+43238: done 6200 games, mean reward -0.059, mean steps 6.08, speed 4.62 f/s, eps 0.96
+43944: done 6300 games, mean reward -0.050, mean steps 6.08, speed 4.61 f/s, eps 0.96
+44000: Best mean value updated 1.334 -> 1.398
+44723: done 6400 games, mean reward -0.045, mean steps 6.10, speed 4.60 f/s, eps 0.96
+45458: done 6500 games, mean reward -0.045, mean steps 6.10, speed 4.62 f/s, eps 0.95
+46000: Best mean value updated 1.398 -> 1.525
+46170: done 6600 games, mean reward -0.043, mean steps 6.10, speed 4.63 f/s, eps 0.95
+46879: done 6700 games, mean reward -0.041, mean steps 6.11, speed 4.67 f/s, eps 0.95
+47610: done 6800 games, mean reward -0.046, mean steps 6.11, speed 4.55 f/s, eps 0.95
+48264: done 6900 games, mean reward -0.041, mean steps 6.10, speed 4.54 f/s, eps 0.95
+48954: done 7000 games, mean reward -0.044, mean steps 6.10, speed 4.60 f/s, eps 0.95
+49675: done 7100 games, mean reward -0.043, mean steps 6.10, speed 4.52 f/s, eps 0.95
+50367: done 7200 games, mean reward -0.041, mean steps 6.10, speed 4.62 f/s, eps 0.95
+51088: done 7300 games, mean reward -0.042, mean steps 6.11, speed 4.36 f/s, eps 0.95
+51795: done 7400 games, mean reward -0.042, mean steps 6.11, speed 4.36 f/s, eps 0.95
+52507: done 7500 games, mean reward -0.045, mean steps 6.11, speed 4.27 f/s, eps 0.95
+53172: done 7600 games, mean reward -0.036, mean steps 6.10, speed 4.33 f/s, eps 0.95
+53851: done 7700 games, mean reward -0.038, mean steps 6.10, speed 4.30 f/s, eps 0.95
+54000: Best mean value updated 1.525 -> 1.533
+54556: done 7800 games, mean reward -0.038, mean steps 6.10, speed 4.28 f/s, eps 0.95
+55308: done 7900 games, mean reward -0.038, mean steps 6.11, speed 4.33 f/s, eps 0.94
+56008: done 8000 games, mean reward -0.040, mean steps 6.11, speed 4.34 f/s, eps 0.94
+56743: done 8100 games, mean reward -0.031, mean steps 6.11, speed 4.30 f/s, eps 0.94
+57000: Best mean value updated 1.533 -> 1.536
+57417: done 8200 games, mean reward -0.035, mean steps 6.11, speed 4.34 f/s, eps 0.94
+58047: done 8300 games, mean reward -0.037, mean steps 6.10, speed 4.41 f/s, eps 0.94
+58748: done 8400 games, mean reward -0.035, mean steps 6.10, speed 4.40 f/s, eps 0.94
+59459: done 8500 games, mean reward -0.034, mean steps 6.10, speed 4.31 f/s, eps 0.94
+60137: done 8600 games, mean reward -0.040, mean steps 6.10, speed 4.33 f/s, eps 0.94
+60825: done 8700 games, mean reward -0.046, mean steps 6.10, speed 4.24 f/s, eps 0.94
+61000: Best mean value updated 1.536 -> 1.747
+61508: done 8800 games, mean reward -0.045, mean steps 6.10, speed 4.38 f/s, eps 0.94
+62235: done 8900 games, mean reward -0.043, mean steps 6.10, speed 4.21 f/s, eps 0.94
+62966: done 9000 games, mean reward -0.040, mean steps 6.10, speed 4.28 f/s, eps 0.94
+63000: Best mean value updated 1.747 -> 1.952
+63729: done 9100 games, mean reward -0.040, mean steps 6.11, speed 4.21 f/s, eps 0.94
+64498: done 9200 games, mean reward -0.041, mean steps 6.12, speed 4.49 f/s, eps 0.94
+65211: done 9300 games, mean reward -0.040, mean steps 6.12, speed 4.41 f/s, eps 0.93
+65905: done 9400 games, mean reward -0.041, mean steps 6.12, speed 4.37 f/s, eps 0.93
+66671: done 9500 games, mean reward -0.040, mean steps 6.12, speed 4.37 f/s, eps 0.93
+67376: done 9600 games, mean reward -0.040, mean steps 6.12, speed 4.36 f/s, eps 0.93
+68087: done 9700 games, mean reward -0.035, mean steps 6.13, speed 4.39 f/s, eps 0.93
+68866: done 9800 games, mean reward -0.038, mean steps 6.13, speed 4.42 f/s, eps 0.93
+69638: done 9900 games, mean reward -0.035, mean steps 6.14, speed 4.45 f/s, eps 0.93
+70428: done 10000 games, mean reward -0.032, mean steps 6.15, speed 4.40 f/s, eps 0.93
+71148: done 10100 games, mean reward -0.033, mean steps 6.15, speed 4.40 f/s, eps 0.93
+71844: done 10200 games, mean reward -0.035, mean steps 6.15, speed 4.39 f/s, eps 0.93
+72000: Best mean value updated 1.952 -> 1.969
+72578: done 10300 games, mean reward -0.028, mean steps 6.15, speed 4.32 f/s, eps 0.93
+73316: done 10400 games, mean reward -0.022, mean steps 6.16, speed 4.31 f/s, eps 0.93
+74006: done 10500 games, mean reward -0.023, mean steps 6.16, speed 4.31 f/s, eps 0.93
+74677: done 10600 games, mean reward -0.026, mean steps 6.16, speed 4.35 f/s, eps 0.93
+75000: Best mean value updated 1.969 -> 1.976
+75359: done 10700 games, mean reward -0.024, mean steps 6.16, speed 4.31 f/s, eps 0.92
+76000: Best mean value updated 1.976 -> 1.981
+76097: done 10800 games, mean reward -0.019, mean steps 6.17, speed 4.27 f/s, eps 0.92
+76875: done 10900 games, mean reward -0.029, mean steps 6.18, speed 4.27 f/s, eps 0.92
+77000: Best mean value updated 1.981 -> 2.130
+77635: done 11000 games, mean reward -0.029, mean steps 6.19, speed 4.21 f/s, eps 0.92
+78382: done 11100 games, mean reward -0.026, mean steps 6.19, speed 4.18 f/s, eps 0.92
+79014: done 11200 games, mean reward -0.024, mean steps 6.19, speed 4.12 f/s, eps 0.92
+79775: done 11300 games, mean reward -0.012, mean steps 6.20, speed 4.06 f/s, eps 0.92
+80493: done 11400 games, mean reward -0.006, mean steps 6.20, speed 4.03 f/s, eps 0.92
+81187: done 11500 games, mean reward -0.004, mean steps 6.20, speed 3.99 f/s, eps 0.92
+81894: done 11600 games, mean reward -0.002, mean steps 6.20, speed 4.02 f/s, eps 0.92
+82586: done 11700 games, mean reward -0.004, mean steps 6.20, speed 3.98 f/s, eps 0.92
+83310: done 11800 games, mean reward -0.002, mean steps 6.20, speed 4.03 f/s, eps 0.92
+84055: done 11900 games, mean reward -0.002, mean steps 6.21, speed 4.03 f/s, eps 0.92
+84818: done 12000 games, mean reward -0.000, mean steps 6.21, speed 4.04 f/s, eps 0.92
+85521: done 12100 games, mean reward 0.003, mean steps 6.21, speed 4.00 f/s, eps 0.91
+86272: done 12200 games, mean reward 0.011, mean steps 6.22, speed 3.97 f/s, eps 0.91
+87136: done 12300 games, mean reward 0.008, mean steps 6.23, speed 3.97 f/s, eps 0.91
+87877: done 12400 games, mean reward 0.011, mean steps 6.23, speed 3.93 f/s, eps 0.91
+88607: done 12500 games, mean reward 0.011, mean steps 6.23, speed 3.91 f/s, eps 0.91
+89338: done 12600 games, mean reward 0.011, mean steps 6.24, speed 3.77 f/s, eps 0.91
+89978: done 12700 games, mean reward 0.011, mean steps 6.23, speed 3.66 f/s, eps 0.91
+90703: done 12800 games, mean reward 0.007, mean steps 6.22, speed 3.64 f/s, eps 0.91
+91420: done 12900 games, mean reward 0.011, mean steps 6.23, speed 3.66 f/s, eps 0.91
+92042: done 13000 games, mean reward 0.015, mean steps 6.23, speed 3.70 f/s, eps 0.91
+92773: done 13100 games, mean reward 0.022, mean steps 6.23, speed 3.70 f/s, eps 0.91
+93448: done 13200 games, mean reward 0.028, mean steps 6.22, speed 3.77 f/s, eps 0.91
+94192: done 13300 games, mean reward 0.029, mean steps 6.23, speed 3.89 f/s, eps 0.91
+94928: done 13400 games, mean reward 0.038, mean steps 6.24, speed 3.90 f/s, eps 0.91
+95652: done 13500 games, mean reward 0.039, mean steps 6.24, speed 3.86 f/s, eps 0.90
+96312: done 13600 games, mean reward 0.039, mean steps 6.23, speed 3.89 f/s, eps 0.90
+97000: Best mean value updated 2.130 -> 2.161
+97054: done 13700 games, mean reward 0.045, mean steps 6.24, speed 3.95 f/s, eps 0.90
+97763: done 13800 games, mean reward 0.050, mean steps 6.24, speed 4.02 f/s, eps 0.90
+98485: done 13900 games, mean reward 0.049, mean steps 6.24, speed 3.92 f/s, eps 0.90
+99193: done 14000 games, mean reward 0.050, mean steps 6.24, speed 3.88 f/s, eps 0.90
+99947: done 14100 games, mean reward 0.048, mean steps 6.25, speed 3.98 f/s, eps 0.90
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+======error state? = before=======
+-253
+50
+=====error state = after====
+100699: done 14200 games, mean reward 0.041, mean steps 6.25, speed 3.87 f/s, eps 0.90
+101371: done 14300 games, mean reward 0.043, mean steps 6.25, speed 3.92 f/s, eps 0.90
+102113: done 14400 games, mean reward 0.044, mean steps 6.25, speed 3.97 f/s, eps 0.90
+102847: done 14500 games, mean reward 0.045, mean steps 6.25, speed 3.96 f/s, eps 0.90
+103601: done 14600 games, mean reward 0.045, mean steps 6.25, speed 4.00 f/s, eps 0.90
+104269: done 14700 games, mean reward 0.046, mean steps 6.25, speed 3.94 f/s, eps 0.90
+105007: done 14800 games, mean reward 0.048, mean steps 6.25, speed 3.83 f/s, eps 0.89
+105751: done 14900 games, mean reward 0.050, mean steps 6.26, speed 3.91 f/s, eps 0.89
+106436: done 15000 games, mean reward 0.061, mean steps 6.27, speed 3.90 f/s, eps 0.89
+107122: done 15100 games, mean reward 0.060, mean steps 6.26, speed 3.92 f/s, eps 0.89
+107821: done 15200 games, mean reward 0.060, mean steps 6.26, speed 3.94 f/s, eps 0.89
+108490: done 15300 games, mean reward 0.067, mean steps 6.26, speed 3.92 f/s, eps 0.89
+109232: done 15400 games, mean reward 0.070, mean steps 6.27, speed 3.93 f/s, eps 0.89
+109919: done 15500 games, mean reward 0.066, mean steps 6.27, speed 3.93 f/s, eps 0.89
+110608: done 15600 games, mean reward 0.064, mean steps 6.26, speed 3.89 f/s, eps 0.89
+111357: done 15700 games, mean reward 0.070, mean steps 6.26, speed 3.89 f/s, eps 0.89
+112000: Best mean value updated 2.161 -> 2.408
+112102: done 15800 games, mean reward 0.080, mean steps 6.27, speed 3.86 f/s, eps 0.89
+112880: done 15900 games, mean reward 0.081, mean steps 6.27, speed 3.87 f/s, eps 0.89
+113659: done 16000 games, mean reward 0.085, mean steps 6.27, speed 3.86 f/s, eps 0.89
+114353: done 16100 games, mean reward 0.092, mean steps 6.28, speed 3.97 f/s, eps 0.89
+115115: done 16200 games, mean reward 0.094, mean steps 6.28, speed 4.01 f/s, eps 0.88
+115831: done 16300 games, mean reward 0.099, mean steps 6.28, speed 4.01 f/s, eps 0.88
+116565: done 16400 games, mean reward 0.097, mean steps 6.28, speed 4.00 f/s, eps 0.88
+117240: done 16500 games, mean reward 0.100, mean steps 6.27, speed 3.99 f/s, eps 0.88
+117925: done 16600 games, mean reward 0.100, mean steps 6.27, speed 4.01 f/s, eps 0.88
+118727: done 16700 games, mean reward 0.106, mean steps 6.28, speed 3.95 f/s, eps 0.88
+119484: done 16800 games, mean reward 0.113, mean steps 6.28, speed 4.01 f/s, eps 0.88
+120153: done 16900 games, mean reward 0.109, mean steps 6.28, speed 3.99 f/s, eps 0.88
+120841: done 17000 games, mean reward 0.111, mean steps 6.28, speed 3.98 f/s, eps 0.88
+121550: done 17100 games, mean reward 0.117, mean steps 6.28, speed 3.86 f/s, eps 0.88
+122236: done 17200 games, mean reward 0.120, mean steps 6.28, speed 3.99 f/s, eps 0.88
+122952: done 17300 games, mean reward 0.119, mean steps 6.28, speed 3.97 f/s, eps 0.88
+123673: done 17400 games, mean reward 0.117, mean steps 6.28, speed 3.85 f/s, eps 0.88
+124370: done 17500 games, mean reward 0.119, mean steps 6.28, speed 3.84 f/s, eps 0.88
+125048: done 17600 games, mean reward 0.114, mean steps 6.28, speed 3.84 f/s, eps 0.87
+125736: done 17700 games, mean reward 0.118, mean steps 6.29, speed 3.91 f/s, eps 0.87
+126479: done 17800 games, mean reward 0.123, mean steps 6.29, speed 3.99 f/s, eps 0.87
+127271: done 17900 games, mean reward 0.122, mean steps 6.29, speed 3.98 f/s, eps 0.87
+127988: done 18000 games, mean reward 0.128, mean steps 6.29, speed 3.99 f/s, eps 0.87
+128675: done 18100 games, mean reward 0.126, mean steps 6.29, speed 3.99 f/s, eps 0.87
+129309: done 18200 games, mean reward 0.135, mean steps 6.29, speed 3.98 f/s, eps 0.87
+130011: done 18300 games, mean reward 0.137, mean steps 6.29, speed 3.97 f/s, eps 0.87
+130719: done 18400 games, mean reward 0.138, mean steps 6.29, speed 3.86 f/s, eps 0.87
+131444: done 18500 games, mean reward 0.140, mean steps 6.30, speed 3.89 f/s, eps 0.87
+132134: done 18600 games, mean reward 0.150, mean steps 6.30, speed 3.82 f/s, eps 0.87
+132857: done 18700 games, mean reward 0.152, mean steps 6.30, speed 3.88 f/s, eps 0.87
+133555: done 18800 games, mean reward 0.159, mean steps 6.30, speed 3.84 f/s, eps 0.87
+134354: done 18900 games, mean reward 0.157, mean steps 6.31, speed 3.92 f/s, eps 0.87
+135098: done 19000 games, mean reward 0.163, mean steps 6.31, speed 3.92 f/s, eps 0.86
+135835: done 19100 games, mean reward 0.169, mean steps 6.31, speed 3.92 f/s, eps 0.86
