@@ -10,4 +10,4 @@ In this project we use actor-critic to optimize returns of trading agent over a 
 
 This folders inlcudes the Google Colab notebook for the data preparation, training and sample run using actor-critic.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/karthikramasamy/cmpe297-wows/blob/master/ac/CMPE297_WoWS.ipynb)]
+[![Open In Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/karthikramasamy/cmpe297-wows/blob/master/ac/CMPE297_WoWS.ipynb)
