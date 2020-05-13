@@ -1,7 +1,5 @@
 # cmpe297-wows
 
- <a href="https://colab.research.google.com/github/karthikramasamy/cmpe297-wows/blob/master/ac/CMPE297_WoWS.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
 Actor critic is a variation on policy gradients.In Actor Critic Approach, The Q function can be broken down into two parts.
 ○ Value Function (V) estimates the value based on the state (s).
 ○ Advantage Function (A) calculates how much value of a state changes given an action (a).
